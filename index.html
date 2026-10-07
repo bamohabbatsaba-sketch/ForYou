@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>برای کوروش من 🤍</title>
+
+    <style>
+
+        /* ========================= */
+        /* فونت‌ها */
+        /* ========================= */
+
+        @font-face {
+            font-family: "BNazanin";
+            src: url("BNazanin.ttf") format("truetype");
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: "IRAMIR";
+            src: url("IRAmir.ttf") format("truetype");
+            font-weight: normal;
+        }
+
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        body {
+            min-height: 100vh;
+
+            font-family:
+                "BNazanin",
+                "B Nazanin",
+                Tahoma,
+                Arial,
+                sans-serif;
+
+            color: white;
+
+            overflow-x: hidden;
+
+            background:
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(145, 70, 255, 0.25),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 80% 70%,
+                    rgba(255, 70, 180, 0.20),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #070511,
+                    #160b2b,
+                    #090514
+                );
+        }
+
+
+        /* ========================= */
+        /* فونت خاص IRAMIR */
+        /* ========================= */
+
+        h1,
+        h2,
+        .door-title,
+        button,
+        .final-love,
+        .signature,
+        .special,
+        .pink,
+        .kourosh-name {
+            font-family:
+                "IRAMIR",
+                "BNazanin",
+                Tahoma,
+                sans-serif;
+        }
+
+
+        /* ========================= */
+        /* قسمت‌های خاص */
+        /* ========================= */
+
+        .special {
+            font-size: 1.08em;
+        }
+
+
+        .kourosh-name {
+            font-size: 1.12em;
+        }
+
+
+        .pink {
+            color: #ffb9e6;
+            font-weight: normal;
+        }
+
+
+        /* ========================= */
+        /* بک‌گراند */
+        /* ========================= */
+
+        body::before,
+        body::after {
+            content: "";
+
+            position: fixed;
+
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            filter: blur(100px);
+
+            opacity: 0.35;
+
+            z-index: -2;
+        }
+
+
+        body::before {
+            background: #8e43ff;
+
+            top: -100px;
+            right: -100px;
+        }
+
+
+        body::after {
+            background: #ff4eb8;
+
+            bottom: -100px;
+            left: -100px;
+        }
+
+
+        /* ========================= */
+        /* ستاره‌ها */
+        /* ========================= */
+
+        .stars {
+            position: fixed;
+
+            inset: 0;
+
+            z-index: -1;
+
+            pointer-events: none;
+        }
+
+
+        .star {
+            position: absolute;
+
+            width: 3px;
+            height: 3px;
+
+            border-radius: 50%;
+
+            background: white;
+
+            box-shadow:
+                0 0 8px white;
+
+            animation:
+                twinkle 2s infinite alternate;
+        }
+
+
+        @keyframes twinkle {
+
+            from {
+                opacity: 0.2;
+                transform: scale(0.7);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1.4);
+            }
+        }
+
+
+        /* ========================= */
+        /* صفحات */
+        /* ========================= */
+
+        .container {
+            min-height: 100vh;
+
+            width: 100%;
+
+            max-width: 850px;
+
+            margin: auto;
+
+            padding:
+                25px 15px 50px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+        }
+
+
+        .page {
+            display: none;
+
+            width: 100%;
+
+            animation:
+                pageIn 0.7s ease;
+        }
+
+
+        .page.active {
+            display: block;
+        }
+
+
+        @keyframes pageIn {
+
+            from {
+                opacity: 0;
+
+                transform:
+                    translateY(25px)
+                    scale(0.98);
+            }
+
+            to {
+                opacity: 1;
+
+                transform:
+                    translateY(0)
+                    scale(1);
+            }
+        }
+
+
+        /* ========================= */
+        /* کارت شیشه‌ای */
+        /* ========================= */
+
+        .glass {
+            width: 100%;
+
+            padding:
+                38px 28px;
+
+            text-align: center;
+
+            border-radius: 30px;
+
+            background:
+                rgba(255, 255, 255, 0.075);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.15);
+
+            backdrop-filter:
+                blur(18px);
+
+            -webkit-backdrop-filter:
+                blur(18px);
+
+            box-shadow:
+                0 25px 70px
+                rgba(0, 0, 0, 0.40),
+
+                inset 0 1px
+                rgba(255, 255, 255, 0.10);
+        }
+
+
+        /* ========================= */
+        /* ماه */
+        /* ========================= */
+
+        .moon {
+            font-size: 55px;
+
+            margin-bottom: 18px;
+
+            animation:
+                floating 3s ease-in-out infinite;
+        }
+
+
+        @keyframes floating {
+
+            0%,
+            100% {
+                transform:
+                    translateY(0);
+            }
+
+            50% {
+                transform:
+                    translateY(-9px);
+            }
+        }
+
+
+        /* ========================= */
+        /* تیترها */
+        /* ========================= */
+
+        h1 {
+            font-size: 29px;
+
+            margin-bottom: 20px;
+        }
+
+
+        h2 {
+            font-size: 26px;
+
+            margin-bottom: 20px;
+        }
+
+
+        p {
+            font-family:
+                "BNazanin",
+                "B Nazanin",
+                Tahoma,
+                Arial,
+                sans-serif;
+
+            font-size: 17px;
+
+            line-height: 2.25;
+
+            color: #f8efff;
+        }
+
+
+        /* ========================= */
+        /* دکمه */
+        /* ========================= */
+
+        button {
+            border: none;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            color: white;
+
+            padding:
+                14px 25px;
+
+            margin-top: 25px;
+
+            border-radius: 50px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #8c48ff,
+                    #e84ca8
+                );
+
+            box-shadow:
+                0 8px 25px
+                rgba(190, 70, 255, 0.30);
+
+            transition:
+                0.3s ease;
+        }
+
+
+        button:hover {
+            transform:
+                translateY(-3px)
+                scale(1.02);
+
+            box-shadow:
+                0 12px 32px
+                rgba(255, 80, 195, 0.4);
+        }
+
+
+        /* ========================= */
+        /* رمز */
+        /* ========================= */
+
+        .password-input {
+            width: 100%;
+
+            max-width: 280px;
+
+            margin-top: 25px;
+
+            padding: 15px;
+
+            border-radius: 16px;
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.18);
+
+            background:
+                rgba(255, 255, 255, 0.07);
+
+            color: white;
+
+            outline: none;
+
+            text-align: center;
+
+            font-size: 22px;
+
+            letter-spacing: 8px;
+        }
+
+
+        .password-input:focus {
+            border-color:
+                #ce82ff;
+
+            box-shadow:
+                0 0 20px
+                rgba(190, 80, 255, 0.25);
+        }
+
+
+        .error {
+            display: none;
+
+            margin-top: 18px;
+
+            color: #ff9fcf;
+
+            line-height: 2;
+        }
+
+
+        /* ========================= */
+        /* انتخاب قول */
+        /* ========================= */
+
+        .choices {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            flex-wrap: wrap;
+
+            margin-top: 5px;
+        }
+
+
+        .choices button {
+            min-width: 210px;
+        }
+
+
+        .no-button {
+            background:
+                rgba(255, 255, 255, 0.07);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.14);
+
+            box-shadow: none;
+        }
+
+
+        .no-message {
+            display: none;
+
+            margin-top: 25px;
+
+            color: #ffb6df;
+        }
+
+
+        /* ========================= */
+        /* درها */
+        /* ========================= */
+
+        .doors {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 18px;
+
+            margin-top: 30px;
+        }
+
+
+        .door {
+            min-height: 165px;
+
+            padding: 20px;
+
+            border-radius: 23px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            cursor: pointer;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255, 255, 255, 0.12),
+                    rgba(255, 255, 255, 0.035)
+                );
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.14);
+
+            transition:
+                0.35s ease;
+        }
+
+
+        .door:hover {
+            transform:
+                translateY(-7px)
+                scale(1.02);
+
+            background:
+                rgba(255, 255, 255, 0.16);
+
+            box-shadow:
+                0 15px 35px
+                rgba(0, 0, 0, 0.25);
+        }
+
+
+        .door-icon {
+            font-size: 40px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .door-title {
+            font-size: 18px;
+
+            line-height: 1.8;
+        }
+
+
+        /* ========================= */
+        /* متن مخفی در */
+        /* ========================= */
+
+        .secret {
+            display: none;
+
+            margin-top: 30px;
+
+            padding:
+                25px 20px;
+
+            border-radius: 22px;
+
+            background:
+                rgba(0, 0, 0, 0.18);
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.10);
+
+            animation:
+                secretIn 0.7s ease;
+        }
+
+
+        .secret.show {
+            display: block;
+        }
+
+
+        @keyframes secretIn {
+
+            from {
+                opacity: 0;
+
+                transform:
+                    translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+        }
+
+
+        /* ========================= */
+        /* مرحله عکس */
+        /* ========================= */
+
+        .photo-section {
+            display: none;
+
+            margin-top: 30px;
+
+            animation:
+                photoReveal 1.5s ease forwards;
+        }
+
+
+        .photo-section.show {
+            display: block;
+        }
+
+
+        @keyframes photoReveal {
+
+            0% {
+                opacity: 0;
+
+                transform:
+                    scale(0.88)
+                    translateY(25px);
+            }
+
+            100% {
+                opacity: 1;
+
+                transform:
+                    scale(1)
+                    translateY(0);
+            }
+        }
+
+
+        .love-photo {
+            width: 100%;
+
+            max-width: 520px;
+
+            display: block;
+
+            margin: auto;
+
+            border-radius: 25px;
+
+            border:
+                1px solid
+                rgba(255, 255, 255, 0.18);
+
+            box-shadow:
+                0 20px 60px
+                rgba(0, 0, 0, 0.45);
+
+            animation:
+                softZoom 4s
+                ease-in-out infinite alternate;
+        }
+
+
+        @keyframes softZoom {
+
+            from {
+                transform:
+                    scale(1);
+            }
+
+            to {
+                transform:
+                    scale(1.025);
+            }
+        }
+
+
+        .photo-text {
+            margin-top: 35px;
+
+            animation:
+                textReveal
+                1.2s ease
+                0.5s both;
+        }
+
+
+        @keyframes textReveal {
+
+            from {
+                opacity: 0;
+
+                transform:
+                    translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+        }
+
+
+        .next-button {
+            margin-top: 30px;
+        }
+
+
+        /* ========================= */
+        /* مرحله آخر */
+        /* ========================= */
+
+        .final-message {
+            font-size: 18px;
+
+            line-height: 2.4;
+        }
+
+
+        .final-love {
+            margin-top: 30px;
+
+            font-size: 26px;
+
+            color: #ffb9e6;
+
+            line-height: 2;
+
+            font-weight: normal;
+
+            text-shadow:
+                0 0 18px
+                rgba(255, 120, 210, 0.25);
+        }
+
+
+        .signature {
+            margin-top: 25px;
+
+            font-size: 19px;
+
+            color: #eadcff;
+        }
+
+
+        /* ========================= */
+        /* موزیک */
+        /* ========================= */
+
+        .music-button {
+            position: fixed;
+
+            left: 18px;
+            bottom: 18px;
+
+            width: 52px;
+            height: 52px;
+
+            padding: 0;
+
+            margin: 0;
+
+            border-radius: 50%;
+
+            display: none;
+
+            align-items: center;
+            justify-content: center;
+
+            z-index: 100;
+
+            font-family:
+                Arial,
+                sans-serif;
+
+            font-size: 22px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #8c48ff,
+                    #e84ca8
+                );
+
+            box-shadow:
+                0 8px 30px
+                rgba(190, 70, 255, 0.4);
+        }
+
+
+        .music-button.playing {
+            animation:
+                musicPulse 1.8s
+                ease-in-out infinite;
+        }
+
+
+        @keyframes musicPulse {
+
+            0%,
+            100% {
+                box-shadow:
+                    0 8px 30px
+                    rgba(190, 70, 255, 0.4);
+            }
+
+            50% {
+                box-shadow:
+                    0 8px 40px
+                    rgba(255, 90, 200, 0.75);
+            }
+        }
+
+
+        /* ========================= */
+        /* موبایل */
+        /* ========================= */
+
+        @media(max-width:600px) {
+
+            .container {
+                padding:
+                    18px
+                    12px
+                    40px;
+            }
+
+
+            .glass {
+                padding:
+                    30px
+                    17px;
+
+                border-radius: 24px;
+            }
+
+
+            h1 {
+                font-size: 25px;
+            }
+
+
+            h2 {
+                font-size: 23px;
+            }
+
+
+            p {
+                font-size: 16px;
+
+                line-height: 2.2;
+            }
+
+
+            .doors {
+                grid-template-columns: 1fr;
+            }
+
+
+            .door {
+                min-height: 125px;
+            }
+
+
+            .choices {
+                flex-direction: column;
+            }
+
+
+            .choices button {
+                width: 100%;
+            }
+
+
+            button {
+                width: 100%;
+            }
+
+
+            .final-love {
+                font-size: 23px;
+            }
+
+
+            .music-button {
+                left: 12px;
+                bottom: 12px;
+
+                width: 48px;
+                height: 48px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================= -->
+    <!-- ستاره‌ها -->
+    <!-- ========================= -->
+
+    <div
+        class="stars"
+        id="stars">
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- موزیک -->
+    <!-- ========================= -->
+
+    <audio
+        id="loveMusic"
+        src="music.mp3"
+        loop
+        preload="auto">
+    </audio>
+
+
+    <button
+        id="musicButton"
+        class="music-button"
+        onclick="toggleMusic()"
+        aria-label="کنترل موزیک">
+        🎵
+    </button>
+
+
+    <main class="container">
+
+
+        <!-- ========================= -->
+        <!-- مرحله اول -->
+        <!-- ========================= -->
+
+        <section
+            class="page active"
+            id="page1">
+
+            <div class="glass">
+
+                <div class="moon">
+                    🌙
+                </div>
+
+
+                <h1 class="special">
+                    خب خب کوروش جانم 😌
+                </h1>
+
+
+                <p>
+
+                    یه سوپرایز کوچولو برات دارم
+
+                    <br>
+
+                    ولی قبلش باید یه چیزی رو مطمئن بشم
+
+                </p>
+
+
+                <p style="margin-top:25px;">
+
+                    از کجا معلوم اون کسی که الان داره
+                    اینا رو میخونه
+
+                    <br>
+
+                    <span class="pink">
+                        خودِ کوروش منه؟ 👀
+                    </span>
+
+                    <br><br>
+
+                    پس
+                    <span class="kourosh-name">
+                        مرد من
+                    </span>
+                    اول باید رمز ورود رو وارد کنی
+                    تا ببینم خودتی یا نه 😉
+
+                </p>
+
+                    <br>
+
+                    فقط حواست باشه ساختارش این مدلیه:
+
+                    <br>
+
+                    <span class="pink">
+                        روز آشناییمون + ماه آشناییمون
+                    </span>
+
+                    <br><br>
+
+                    حالا ببینم واقعاً یادت مونده یا نه 😌
+
+                </p>
+
+
+                <input
+                    id="password"
+                    class="password-input"
+                    type="text"
+                    maxlength="4"
+                    inputmode="numeric"
+                    placeholder="••••"
+                >
+
+
+                <p
+                    style="
+                    margin-top:12px;
+                    font-size:14px;
+                    color:#d8c9e5;
+                    "
+                >
+
+                    رمز رو وارد کن
+                    <span class="pink">
+                        مرد باهوش من
+                    </span>
+                    👀
+
+                </p>
+
+
+                <button onclick="checkPassword()">
+                    بریم ببینیم خودتی یا نه 😉
+                </button>
+
+
+                <div
+                    class="error"
+                    id="error">
+
+                    اِ اِ... 🤨
+
+                    <br>
+
+                    انگار یه جای رمز اشتباهه!
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- مرحله دوم -->
+        <!-- ========================= -->
+
+        <section
+            class="page"
+            id="page2">
+
+            <div class="glass">
+
+                <div class="moon">
+                    😌
+                </div>
+
+
+                <h2 class="special">
+                    آهاااا 😌
+                </h2>
+
+
+                <p>
+
+                    پس خودتی...
+
+                    <br><br>
+
+                    بالاخره پیدات کردم
+
+                    <span class="pink">
+                        مرد من 👀
+                    </span>
+
+                    <br><br>
+
+                    البته از همون اولم میدونستم خودتی
+
+                    <br>
+
+                    ولی خب باید یه کم اذیتت میکردم دیگه 😂
+
+                </p>
+
+
+                <p style="margin-top:25px;">
+
+                    حالا که رمز رو درست زدی
+                    دیگه راه فراری نداری
+
+                    <br>
+
+                    چون اینجا یه چیزی منتظرته
+                    که مخصوص خود خودته
+
+                    <br><br>
+
+                    فقط یه قول کوچولو بده
+
+                    <br>
+
+                    تا آخرش باهام میای
+                    و هی جلو نمیزنی
+                    که ببینی آخرش چیه 😏
+
+                    <br><br>
+
+                    <span class="pink">
+                        قول میدی؟
+                    </span>
+
+                </p>
+
+
+                <div class="choices">
+
+                    <button onclick="promiseYes()">
+                        آره قول میدم 😌
+                    </button>
+
+
+                    <button
+                        class="no-button"
+                        onclick="promiseNo()">
+
+                        نه میخوام یواشکی آخرشو ببینم 👀
+
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="no-message"
+                    id="noMessage">
+
+                    اوهووو 😑
+
+                    <br>
+
+                    پس از همین اول میخوای
+                    قانون‌شکنی کنی؟ 😂
+
+                    <br><br>
+
+                    باشه مرد عجول من
+
+                    <br>
+
+                    با من مرحله به مرحله بیا عجله نکن😏
+
+                    <br>
+
+
+                    <button onclick="promiseYes()">
+                        خب حالا بریم؟ 👀
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="yesMessage"
+                    style="
+                    display:none;
+                    margin-top:25px;
+                    "
+                >
+
+                    <p>
+
+                        این شد 😌
+
+                        <br>
+
+                        حالا میتونم با خیال راحت
+                        سورپرایزمو شروع کنم 🤍
+
+                    </p>
+
+
+                    <button onclick="nextPage(3)">
+                        بریم که شروع شد... ✨
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- مرحله سوم -->
+        <!-- ========================= -->
+
+        <section
+            class="page"
+            id="page3">
+
+            <div class="glass">
+
+                <div class="moon">
+                    🌙
+                </div>
+
+
+                <h2 class="special">
+                    یه بازی کوچیک بین من و تو
+                </h2>
+
+
+                <p>
+
+                    خب خب
+                    <span class="kourosh-name">
+                        کوروش من
+                    </span>
+                    😌
+
+                    <br>
+
+                    رسیدیم به جایی که دیگه فقط قرار نیست
+                    روی دکمه‌ها کلیک کنی
+
+                    <br><br>
+
+                    اینجا چندتا در داری
+
+                    <br>
+
+                    پشت هر کدومش یه تیکه از حرفاییه
+                    که شاید همیشه بهت نگفته باشم
+
+                    <br><br>
+
+                    ولی یه قانون داریم
+
+                    <br>
+
+                    <span class="pink">
+                        فقط یکی رو میتونی انتخاب کنی 👀
+                    </span>
+
+                    <br><br>
+
+                    پس یکم با دقت انتخاب کن
+
+                    <br>
+
+                    ببین دلت میخواد کدوم گوشه‌ی دل منو
+                    یواشکی نگاه کنی 🤍
+
+                </p>
+
+
+                <div class="doors">
+
+
+                    <div
+                        class="door"
+                        onclick="openDoor(1)"
+                    >
+
+                        <div class="door-icon">
+                            🌙
+                        </div>
+
+                        <div class="door-title">
+                            حرفی که همیشه تو دلم مونده
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="door"
+                        onclick="openDoor(2)"
+                    >
+
+                        <div class="door-icon">
+                            😏
+                        </div>
+
+                        <div class="door-title">
+                            یه اعتراف کوچولو
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="door"
+                        onclick="openDoor(3)"
+                    >
+
+                        <div class="door-icon">
+                            🫣
+                        </div>
+
+                        <div class="door-title">
+                            چیزی که وقتی نیستی بهش فکر میکنم
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="door"
+                        onclick="openDoor(4)"
+                    >
+
+                        <div class="door-icon">
+                            🎁
+                        </div>
+
+                        <div class="door-title">
+                            چیزی که برای آینده‌مون میخوام
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    class="secret"
+                    id="secret">
+
+                    <p id="secretText"></p>
+
+
+                    <button
+                        class="continue-button"
+                        onclick="nextPage(4)">
+
+                        خب... بریم مرحله بعد؟ 👀
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- مرحله چهارم -->
+        <!-- ========================= -->
+
+        <section
+            class="page"
+            id="page4">
+
+            <div class="glass">
+
+                <div class="moon">
+                    🥹
+                </div>
+
+
+                <h2 class="special">
+                    Saba & Kourosh
+                </h2>
+
+
+                <div id="beforePhoto">
+
+                    <p>
+
+                        خب...
+
+                        <br>
+
+                        این یکی یه کم فرق داره
+
+                        <br><br>
+
+                        چیز زیادی نمیگم
+
+                        <br>
+
+                        فقط روی دکمه بزن
+
+                        <br>
+
+                        بعدش خودت میفهمی چرا
+                        گذاشتمش اینجا 😌
+
+                        <br><br>
+
+                        آماده‌ای؟
+
+                    </p>
+
+
+                    <button onclick="showPhoto()">
+                        بازش کن 👀
+                    </button>
+
+                </div>
+
+
+                <div
+                    class="photo-section"
+                    id="photoSection">
+
+                    <img
+                        src="Mylove.jpg"
+                        alt="برای کوروش من"
+                        class="love-photo"
+                    >
+
+
+                    <div class="photo-text">
+
+                        <p>
+
+                            🥹
+
+                            <br>
+
+                            نمیدونم چرا این عکسو که میبینم
+                            یه حس قشنگی میگیرم
+
+                            <br><br>
+
+                            شاید چون یه جورایی شبیه چیزیه
+                            که همیشه دلم میخواسته
+
+                            <br>
+
+                            من و تو کنار هم
+
+                            <br>
+
+                            همینقدر آروم
+                            <br><br>
+
+                            فقط دلم میخواد یه روز
+                            واقعا تجربش کنیم
+
+                            <br>
+
+                            نه توی عکس
+
+                            <br>
+
+                            نه توی خیال
+
+                            <br>
+
+                            واقعا خودمون دوتا کنار هم باشیم
+
+                            <br><br>
+
+                            یه دیت که من بغلت کنم
+                            و دیگه لازم نباشه دلمو به عکس
+                            خوش کنم 😌
+
+                            <br><br>
+
+                            فکر کنم همون روزی که بالاخره
+                            کنار هم باشیم
+
+                            <br>
+
+                            از شدت ذوق ندونم چی باید بگم 😂
+
+                            <br><br>
+
+                            ولی یه چیزو میدونم...
+
+                            <br>
+
+                            اون لحظه رو خیلی وقته دلم میخواد
+                            تجربه کنم با تو 🤍
+
+                        </p>
+
+
+                        <button
+                            class="next-button"
+                            onclick="nextPage(5)">
+
+                            هنوز یه حرف دیگه مونده... 🤍
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================= -->
+        <!-- مرحله پنجم -->
+        <!-- ========================= -->
+
+        <section
+            class="page"
+            id="page5">
+
+            <div class="glass">
+
+                <div class="moon">
+                    🌙
+                </div>
+
+
+                <h2 class="special">
+                    خب کوروش من 🥹🤍
+                </h2>
+
+
+                <p class="final-message">
+
+                    می‌دونی یکی از قشنگ‌ترین چیزایی که توی داشتنِ تو دوست دارم اینه که همیشه می‌تونم بهت تکیه کنم. تو برای من فقط یه آدم دوست‌داشتنی نیستی، تو مردی هستی که کنارت احساس امنیت و آرامش می‌کنم و می‌دونم همیشه می‌تونم روی بودنت حساب کنم.
+                    <br>
+
+                    بهت افتخار می‌کنم، به مردی که هستی، به قلب مهربونت، به پختگی و درکت، به حمایتگر بودنت و به اینکه همیشه سعی می‌کنی پشت من باشی و راهنماییم کنی. این ویژگی‌هات برای من واقعاً باارزشه و باعث میشه هر روز بیشتر از داشتنِ تو خوشحال بشم.
+                    <br><br>
+
+                    مرد من، تو خیلی خوبی... شاید خودت ندونی ولی داشتنِ آدمی مثل تو برای من واقعاً یه حس قشنگ و باارزشه. اینکه کنار تو می‌تونم خودم باشم، حرف بزنم، یاد بگیرم و احساس کنم یکی هست که حواسش به منه، برای من خیلی مهمه.
+
+                    <br>
+
+                    من بهت افتخار می‌کنم؛ به خودت، به قلبت، به تلاشت و به مردی که هستی. خوشحالم که تو رو دارم و امیدوارم همیشه بدونی که چقدر برای من عزیز و ارزشمندی.
+
+
+                </p>
+
+
+                <div class="final-love">
+
+                    خلاصه که...
+
+                    <br>
+
+                    به داشتن مردی مثل تو
+                    افتخار میکنم 😌
+
+                </div>
+
+
+                <p style="margin-top:30px;">
+
+                    مرد من، مرسی بابت خوب بودنت، امن بودنت، حمایتگر بودنت و قدردان تک تکشون هستم. 
+
+                </p>
+
+
+                <div class="final-love">
+
+                    صبا بینهایت عاشقته ❤️
+
+                </div>
+
+
+                <div class="signature">
+
+                    تا ابد
+
+                    <br>
+
+                    صبا ♾️ کوروش
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ========================= -->
+    <!-- JavaScript -->
+    <!-- ========================= -->
+
+    <script>
+
+
+        /* ========================= */
+        /* ساخت ستاره‌ها */
+        /* ========================= */
+
+        const stars =
+            document.getElementById("stars");
+
+
+        for (let i = 0; i < 100; i++) {
+
+            const star =
+                document.createElement("div");
+
+
+            star.className =
+                "star";
+
+
+            star.style.left =
+                Math.random() * 100 + "%";
+
+
+            star.style.top =
+                Math.random() * 100 + "%";
+
+
+            star.style.animationDelay =
+                Math.random() * 3 + "s";
+
+
+            star.style.animationDuration =
+                (1.5 + Math.random() * 3) + "s";
+
+
+            stars.appendChild(star);
+
+        }
+
+
+
+        /* ========================= */
+        /* رفتن به صفحه بعد */
+        /* ========================= */
+
+        function nextPage(number) {
+
+            document
+                .querySelectorAll(".page")
+                .forEach(page => {
+
+                    page.classList.remove("active");
+
+                });
+
+
+            document
+                .getElementById("page" + number)
+                .classList.add("active");
+
+
+            window.scrollTo({
+
+                top: 0,
+
+                behavior: "smooth"
+
+            });
+
+        }
+
+
+
+        /* ========================= */
+        /* بررسی رمز */
+        /* ========================= */
+
+        function checkPassword() {
+
+            const password =
+                document
+                .getElementById("password")
+                .value;
+
+
+            const error =
+                document
+                .getElementById("error");
+
+
+            if (password === "0307") {
+
+                error.style.display =
+                    "none";
+
+
+                nextPage(2);
+
+            } else {
+
+                error.style.display =
+                    "block";
+
+            }
+
+        }
+
+
+
+        /* ========================= */
+        /* قول */
+        /* ========================= */
+
+        function promiseNo() {
+
+            document
+                .getElementById("noMessage")
+                .style.display =
+                "block";
+
+
+            document
+                .getElementById("yesMessage")
+                .style.display =
+                "none";
+
+        }
+
+
+
+        function promiseYes() {
+
+            document
+                .getElementById("noMessage")
+                .style.display =
+                "none";
+
+
+            document
+                .getElementById("yesMessage")
+                .style.display =
+                "block";
+
+        }
+
+
+
+        /* ========================= */
+        /* متن درهای مرحله سوم */
+        /* ========================= */
+
+        const doorTexts = {
+
+
+            1: `
+
+                بعضی وقتا دلم میخواد
+                فقط بشینم کنارت
+
+                <br>
+
+                نه حرفی بزنم
+                نه چیزی بخوام
+
+                <br>
+
+                فقط بدونم تو اینجایی
+
+                <br><br>
+
+                شاید عجیب باشه
+                ولی همین که بدونم هستی
+                یه جوری دلم آروم میشه
+
+                <br><br>
+
+                انگار همه چی
+                سر جاش قرار گرفته
+
+                <br><br>
+
+                فکر کنم خودت ندونی
+                بودنت برای من چقدر آرامشه 🥺
+
+            `,
+
+
+            2: `
+
+                اعتراف کنم؟
+
+                <br>
+
+                باشه 😌
+
+                <br><br>
+
+                من خیلی وقتا بیشتر از چیزی
+                که نشون میدم دلم برات تنگ میشه
+
+                <br>
+
+                بعضی وقتا یهو میرم سراغ عکسات
+
+                <br><br>
+
+                بعد با خودم میگم:
+
+                <br><br>
+
+                <span class="pink">
+
+                    مگه میشه حتی جزئی‌ترین
+                    ویژگی های یک آدم
+                    دقیقا همون چیزی باشه
+                    که من همیشه میخواستم؟
+
+                </span>
+
+                <br><br>
+
+                انگار تو خلاصه‌ی تمامِ دوست‌داشتنی‌های منی؛
+
+                <br><br>
+                همون چیزی که نمی‌دونستم تمامِ این سال‌ها منتظرش بودم، تا وقتی که پیدات کردم و فهمیدم دلم همیشه جایِ تو رو می‌شناخته. 🤍
+                <br>
+
+                از اخلاق و رفتارت بگیر
+                تا کوچیک ترین جزئیاتی
+                که شاید خودت اصلا حواست
+                بهشون نباشه
+
+                <br><br>
+                و هر چی میگذره و بیشتر میشناسمت مطمئن تر میگم:
+
+                <br><br>
+
+                <span class="pink">
+
+                    آره...
+                    خودشه 😌🤍
+
+                </span>
+
+            `,
+
+
+            3: `
+
+                به روزایی فکر میکنم
+                که دیگه فاصله بینمون نباشه
+
+                <br><br>
+
+                اینکه بتونم ببینمت
+                و لازم نباشه از دور بهت بگم
+                دلم برات تنگ شده
+
+                <br>
+
+                چون خودت کنارمی
+
+                <br><br>
+
+                اینکه ساعت ها منتظرت بمونم که
+                برگردی خونه
+
+                <br>
+
+                من باشم
+
+                <br>
+
+                تو باشی
+
+                <br>
+
+                و یه عالمه لحظه‌ی ساده
+                که فقط مال خودمونه
+
+                <br><br>
+
+                راستش من بیشتر از چیزای بزرگ
+                دلم همین سادگی‌ها رو میخواد
+                با تو 🥺
+
+            `,
+
+
+            4: `
+
+                دلم میخواد یه عالمه خاطره‌ی قشنگ
+                باهم بسازیم
+
+              <br>
+
+                و یه روز بشینیم
+                به همه‌ی این روزای دوریمون نگاه کنیم
+                و بگیم:
+
+                <br><br>
+
+                <span class="pink">
+
+                    «بالاخره رسیدیم به هم» 🥹
+
+                </span>
+
+            `
+
+        };
+
+
+
+        /* ========================= */
+        /* باز کردن در */
+        /* ========================= */
+
+        function openDoor(number) {
+
+            const secret =
+                document.getElementById("secret");
+
+
+            const text =
+                document.getElementById("secretText");
+
+
+            text.innerHTML =
+                doorTexts[number];
+
+
+            secret.classList.add("show");
+
+
+            setTimeout(() => {
+
+                secret.scrollIntoView({
+
+                    behavior: "smooth",
+
+                    block: "center"
+
+                });
+
+            }, 150);
+
+        }
+
+
+
+        /* ========================= */
+        /* باز کردن عکس + موزیک */
+        /* ========================= */
+
+        function showPhoto() {
+
+            document
+                .getElementById("beforePhoto")
+                .style.display =
+                "none";
+
+
+            document
+                .getElementById("photoSection")
+                .classList.add("show");
+
+
+            /* شروع موزیک */
+
+            const music =
+                document.getElementById("loveMusic");
+
+
+            const musicButton =
+                document.getElementById("musicButton");
+
+
+            music.volume = 0.65;
+
+
+            music.play()
+                .then(function() {
+
+                    musicButton.style.display =
+                        "flex";
+
+                    musicButton.innerText =
+                        "🎵";
+
+                    musicButton.classList.add(
+                        "playing"
+                    );
+
+                })
+                .catch(function() {
+
+                    musicButton.style.display =
+                        "flex";
+
+                    musicButton.innerText =
+                        "🔇";
+
+                });
+
+
+            setTimeout(() => {
+
+                document
+                    .getElementById("photoSection")
+                    .scrollIntoView({
+
+                        behavior: "smooth",
+
+                        block: "center"
+
+                    });
+
+            }, 200);
+
+        }
+
+
+
+        /* ========================= */
+        /* کنترل موزیک */
+        /* ========================= */
+
+        function toggleMusic() {
+
+            const music =
+                document.getElementById("loveMusic");
+
+
+            const musicButton =
+                document.getElementById("musicButton");
+
+
+            if (music.paused) {
+
+                music.play()
+                    .then(function() {
+
+                        musicButton.innerText =
+                            "🎵";
+
+                        musicButton.classList.add(
+                            "playing"
+                        );
+
+                    });
+
+            } else {
+
+                music.pause();
+
+                musicButton.innerText =
+                    "🔇";
+
+                musicButton.classList.remove(
+                    "playing"
+                );
+
+            }
+
+        }
+
+
+
+        /* ========================= */
+        /* Enter برای رمز */
+        /* ========================= */
+
+        document
+            .getElementById("password")
+            .addEventListener(
+                "keydown",
+                function(event) {
+
+                    if (event.key === "Enter") {
+
+                        checkPassword();
+
+                    }
+
+                }
+            );
+
+
+    </script>
+
+</body>
+
+</html>
